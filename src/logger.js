@@ -1,7 +1,5 @@
 import fs from 'node:fs';
 
-// Создайте функцию `logMessage`, которая принимает сообщение и записывает его в файл `log.txt`.
-
 const logMesaage = (message) => {
   const filePath = 'src/log.txt';
   const logEntry = `${message}`;
