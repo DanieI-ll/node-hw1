@@ -1,8 +1,9 @@
 import fs from 'node:fs';
 
+const filePath = 'src/log.txt';
+
 const logMesaage = (message) => {
-  const filePath = 'src/log.txt';
-  const logEntry = `${message}`;
+  const logEntry = message;
 
   fs.appendFile(filePath, logEntry, (err) => {
     if (err) {
